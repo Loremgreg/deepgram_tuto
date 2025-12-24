@@ -9,6 +9,11 @@
     <h1>Transcribe Audio With FastAPI</h1>
     <p id="status">Connection status will go here</p>
     <p id="transcript"></p>
+    <script>
+        navigator.mediaDevices.getUserMedia({ audio: true }).then((stream) => {
+            const mediaRecorder = new MediaRecorder(stream)
+        })
+    </script>
 </body>
 
 </html>
